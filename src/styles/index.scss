@@ -1,0 +1,183 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+body,
+h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+span,
+input,
+textarea {
+  font-weight: normal;
+  margin: 0;
+  // font-family: "microsoft yahei";
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.common-container {
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 6px;
+  padding: 20px;
+
+  >h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+/// 面包屑
+.navigation-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdee3;
+}
+
+.custom_dialog {
+  width: 500px;
+}
+
+.common-label {
+  label {
+    font-weight: normal;
+  }
+
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+.uploader-from {
+  .avatar-uploader-icon {
+    border: 1px solid #DCDFE6;
+  }
+
+  .avatar-uploader-icon {
+    width: 148px !important;
+    height: 148px !important;
+    line-height: 148px !important;
+  }
+
+  .avatar {
+    width: 148px !important;
+    height: 148px !important;
+  }
+}
+
+.uploader-from-100 {
+  .avatar-uploader-icon {
+    border: 1px solid #DCDFE6;
+  }
+
+  .avatar-uploader-icon {
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 100px !important;
+  }
+
+  .avatar {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+// 家庭服务师
+.edit_container,
+.reset_from {
+  .el-radio {
+    margin-right: 10px;
+  }
+
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+
+  .el-input--medium {
+    .el-input__icon {
+      line-height: 36px;
+      height: 36px;
+    }
+  }
+}
+
+.right_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
